@@ -5,6 +5,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
  
+@app.route('/',methods=['GET'])
+def r():
+    return 'helo'
+ 
 @app.route('/rsttohtml',methods=['POST'])
 def rst_html():
     try:
