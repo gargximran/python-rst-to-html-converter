@@ -16,5 +16,4 @@ def rst_html():
     except Exception as e:
         return {"status_code":500,"res":e}
         
-if __name__ == '__main__':
-    app.run()
+
